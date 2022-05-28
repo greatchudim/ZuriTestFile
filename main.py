@@ -9,7 +9,7 @@ def read_file_content(filename):
 
 
 def count_words():
-    text = read_file_content('Reading-Text-Files/story.txt')
+    text = read_file_content('./story.txt')
     words = (text.split())
     unique_words = set(words)
     theWords = {}
@@ -17,7 +17,7 @@ def count_words():
         theWords.update({word: words.count(word)})
     return theWords
 
-text = read_file_content('Reading-Text-Files/story.txt')
+text = read_file_content('./story.txt')
 
 print(text)
 
